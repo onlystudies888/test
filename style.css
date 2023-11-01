@@ -9,6 +9,9 @@ body{
     justify-content: center;
     flex-direction: column;
 }
+h1{
+    padding-left: 8%
+}
 
 h3{
     margin-top: 10%;
