@@ -52,11 +52,13 @@ let TextSecond = 'Seconds'
 
 //html output
 const data = document.getElementById('dayLeft')
-data.textContent = `${daysLeft} ${days} ${hours} ${txtHour} ${minutes} ${txtMinute} ${seconds} ${TextSecond}`
+data.textContent = `${daysLeft} ${days}`
+const data2 = document.getElementById('timeLeft')
+data2.textContent = `${hours}:${minutes}:${seconds}`
 
 
 const data1 = document.getElementById('dayPassed')
-data1.textContent = `${daysLeft1} Days ${hoursLeft1} Hours ${minutesLeft1} Minutes ${secondsLeft1} Seconds`
+data1.textContent = `${daysLeft1} Days ${hoursLeft1} Hours ${minutesLeft1} Minutes`
 //refresh webiste
 // Function to reload the page every second
 function refreshPage() {
