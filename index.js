@@ -1,3 +1,4 @@
+function updateclock(){
 // Define the target date (December 1, 2023)
 const targetDate = new Date('2023-12-01T00:00:00');
 
@@ -44,25 +45,19 @@ let hours = addingZero(hoursLeft)
 let minutes = addingZero(minutesLeft)
 let seconds = addingZero(secondsLeft)
 
-//formating Output
-let txtHour = 'Hours'
-let txtMinute = 'Minutes'
-let TextSecond = 'Seconds'
 
 
 //html output
 const data = document.getElementById('dayLeft')
-data.textContent = `${daysLeft} ${days} ${hours} ${txtHour} ${minutes} ${txtMinute} ${seconds} ${TextSecond}`
+data.textContent = `${daysLeft} ${days}`
+const data2 = document.getElementById('timeLeft')
+data2.textContent = `${hours}:${minutes}:${seconds}`
 
 
 const data1 = document.getElementById('dayPassed')
 data1.textContent = `${daysLeft1} Days ${hoursLeft1} Hours ${minutesLeft1} Minutes ${secondsLeft1} Seconds`
+}
+setInterval(updateclock,1000)
 //refresh webiste
 // Function to reload the page every second
-function refreshPage() {
-    location.reload();
-  }
-  
-  // Set a timeout to call the refreshPage function every 1000 milliseconds (1 second)
-  setInterval(refreshPage, 100000);
-  
+updateclock();

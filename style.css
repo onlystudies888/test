@@ -9,6 +9,11 @@ body{
     justify-content: center;
     flex-direction: column;
 }
+@media(max-width: 600px){
+    h1{
+        padding-left: 1vh;
+    }
+}
 
 h3{
     margin-top: 10%;
