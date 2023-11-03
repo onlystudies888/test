@@ -6,12 +6,15 @@ body{
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
+    margin-top: 8%;
 }
 @media(max-width: 600px){
-    h1{
-        padding-left: 1vh;
+    
+    body{
+        font-size: 2vh;
+        margin-top: 0;
     }
 }
 
