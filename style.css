@@ -4,33 +4,43 @@
 }
 body{
     background: linear-gradient(to right, #9BBEC8, #427D9D);
-    background-image: url(pexels-joão-jesus-925743.jpg);
-    margin: 0;
-    padding: 0;
+    /* background-image: url(pexels-joão-jesus-925743.jpg); */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#dayLeft, #dayPassed, #timeLeft{
     font-family: clock;
-    height: 100vh;
+}
+
+.ubody, .header, .lbody{
     display: flex;
-    align-items: center;
-    /* justify-content: center; */
     flex-direction: column;
-    margin-top: 8%;
+    align-items: center;
 }
-
-@media(max-width: 600px){
-    
-    body{
-        font-size: 2vh;
-        margin-top: 100px;
+.days, .header{
+    font-size: 3.2vh;
+    margin-top: 3%;
+}
+.text{
+    font-size: larger;
+}
+.lbody{
+    padding-top: 10%;
+}
+@media (max-width: 600px) {
+    .days, .header{
+        font-size: 2.3vh;
+        margin-top: 3%;
     }
-    h3{
-        padding-left: 30px;
+
+    .time, h4{
+        font-size: 1.5vh;
+    }
+    .lbody{
+        padding-top: 35%;
+    }
+    .days{
+        font-size: 4vh;
     }
 }
-
-h3{
-    margin-top: 20%;
     
-}
-h4{
-    margin-top: 0;
-}
