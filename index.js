@@ -1,6 +1,6 @@
 function updateclock(){
 // Define the target date (December 1, 2023)
-const targetDate = new Date('2023-12-01T00:00:00');
+const targetDate = new Date('2024-01-01T00:00:00');
 
 // Get the current date and time
 const currentDate = new Date();
